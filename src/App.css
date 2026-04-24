@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f8;
+}
+
+.frame-heaer {
+    height: 50px;
+    background-color: #f8bbd0;
+}
+
+.cch {
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.navbar {
+    border-bottom: 2px solid #f8bbd0;
+}
+
+
+h3 {
+    /* background: linear-gradient(to right, #ec407a, #d81b60); */
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.frame-danhmuc {
+    background-color: #fce4ec;
+    padding: 10px;
+}
+
+.frame-danhmuc ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.frame-danhmuc ul li {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.frame-danhmuc ul li:hover {
+    background-color: #f8bbd0;
+}
+
+.card {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#login {
+    width: 350px;
+    background: white;
+    position: fixed;
+    top: 20%;
+    left: calc(50% - 175px);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    display: none;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.detail {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.frame {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.frame img {
+    width: 100%;
+    height: 100%;
+}
+
+.frame img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #f8bbd0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .frame-danhmuc {
+        display: none;
+    }
+}
+
+.container1 {
+    width: 60%;
+    margin: auto;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.product img:hover {
+    transform: scale(1.1);
+}
+#chitiet {
+    display: none;
+}
+.review-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.review-card {
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    text-align: center;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+ul {
+    list-style-position: inside;
+    text-align: center;
+    padding-left: 0;
+}
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.product {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product img {
+    width: 200px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.product img:hover {
+    transform: scale(1.1);
+}
