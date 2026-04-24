@@ -11,7 +11,7 @@ export default function ShowKienThucMoi() {
         {kienThuc.map(tin => (
           <article className="post-item mb-5 pb-4 border-bottom" key={tin.id}>
             <img
-              src={`/images/${tin.hinh}`}
+              src={`/img/${tin.hinh}`}
               className="img-fluid rounded-4 mb-3 w-100 shadow-sm"
               alt={tin.tieude}
               style={{ height: "auto", objectFit: "contain" }}

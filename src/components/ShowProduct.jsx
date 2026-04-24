@@ -1,7 +1,7 @@
 import  sanpham  from "../data/products";
 import { Link } from "react-router-dom";
 export default function ShowSPKM() {
-  const km = sanpham.filter(sp => sp.mota === "spkm");
+  const km = sanpham.filter(sp => sp.dm === "spkm");
 
   return (
     <div className="container">
@@ -25,7 +25,7 @@ export default function ShowSPKM() {
 }
 
 export function ShowSPBC() {
-  const bc = sanpham.filter(sp => sp.mota === "spbc");
+  const bc = sanpham.filter(sp => sp.dm=== "spbc");
 
   return (
         <div className="container">
@@ -49,7 +49,7 @@ export function ShowSPBC() {
 }
 
 export function ShowSPH() {
-  const hot = sanpham.filter(sp => sp.mota === "sphot");
+  const hot = sanpham.filter(sp => sp.dm === "sph");
 
   return (
         <div className="container">
