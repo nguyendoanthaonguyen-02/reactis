@@ -46,7 +46,7 @@ export default function LoginForm({ show, onClose }) {
           ×
         </button>
 
-        <h3 className="text-center mb-3 text-color-black">Đăng Nhập</h3>
+        <h3 className="text-center mb-3 text-dark">Đăng Nhập</h3>
 
         <label>Tài khoản</label>
         <input

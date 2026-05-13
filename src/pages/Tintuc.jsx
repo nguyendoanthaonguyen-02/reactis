@@ -9,7 +9,7 @@ import Sidebar from "../components/Sidebar";
 export default function Tintuc() {
   return (
     <>
-    <Test/>
+    
     <div className="container mt-5">
       <div className="row g-5">
         {/* Banner thường nằm trên cùng, nên để ngoài hàng row hoặc trong col-12 */}

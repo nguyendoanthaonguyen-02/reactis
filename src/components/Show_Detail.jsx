@@ -92,7 +92,7 @@ export default function Show_Detail() {
 
             {/* SẢN PHẨM CÙNG DÒNG GIỮ NGUYÊN */}
             <div className="mt-5 pt-4 border-top">
-                <h3 className="fw-bold mb-4">SẢN PHẨM CÙNG DÒNG {product.danhmuc}</h3>
+                <h3 className="fw-bold mb-4 text-dark">SẢN PHẨM CÙNG DÒNG {product.danhmuc}</h3>
                 <div className="row">
                     {relatedProducts.map(item => (
                         <div className="col-md-3 mb-4" key={item.id}>
