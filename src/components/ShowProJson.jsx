@@ -27,6 +27,9 @@ export default function ConnectAPI() {
 
   return (
     <div className="container">
+      <h1 className="text-center my-4">
+        Danh Sách Sản Phẩm
+      </h1>
       <div className="row g-3">
         {products.length > 0 ? (
           products.map((item) => (
