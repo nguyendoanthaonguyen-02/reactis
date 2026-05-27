@@ -1,7 +1,7 @@
 import listProduct from "../../data/products";
 import useSearch from "../hook/useSearch";
 
-export default function ShowSearchProduct() {
+export default function SearchProductAPI() {
     const { searchTerm, setSearchTerm, filteredData } = useSearch(listProduct);
 
     return (

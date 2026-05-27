@@ -1,14 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import useSearch from "../components/hook/useSearch";
-// import SearchProductAPI from "./product/SearchProductAPI";
+import SearchProductAPI from "./product/SearchProductAPI";
 
 export default function ConnectAPI() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const { searchTerm, setSearchTerm, filteredData } = useSearch(products);
 
   useEffect(() => {
     axios
@@ -38,51 +36,13 @@ export default function ConnectAPI() {
   if (error) return <p className="text-center w-100 text-danger">Lỗi khi tải dữ liệu.</p>;
 
   return (
+    
+
 
     <div className="container">
-      <div className="container mt-4">
-        {/* 1. ô tìm kiếm */}
-        <input
-          type="text"
-          className="form-control mb-4"
-          placeholder="Nhập tên sản phẩm để tìm..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
+      <SearchProductAPI products={products} />
 
-        {/* 2. Hiển thị danh sách kết quả */}
-        <div className="row">
-          {filteredData.length > 0 ? (
-            filteredData.map((item) => (
-              <div className="col-md-3 mb-4" key={item.id}>
-                <div className="card h-100 shadow-sm">
-                  <img
-                    src={`${item.hinh}`}
-                    className="card-img-top"
-                    alt={item.ten}
-                  />
-                  <div className="card-body text-center">
-                    <h5 className="card-title">{item.tensp}</h5>
-                    <p className="text-danger fw-bold">
-                      {item.gia.toLocaleString()} VND
-                    </p>
-                    <Link to={`/detail/${item.id}`} className="btn btn-primary btn-sm px-4"> Xem chi tiết</Link>
-
-                  </div>
-                </div>
-              </div>
-            ))
-          ) : (
-            <p className="text-center w-100">
-              Không tìm thấy sản phẩm nào!
-            </p>
-          )}
-        </div>
-      </div>
-
-      {/* <SearchProductAPI products={products} /> */}
-
-      {/* <h1 className="text-center my-4">
+      <h1 className="text-center my-4">
         Danh Sách Sản Phẩm
       </h1>
       <div className="row g-3">
@@ -101,8 +61,8 @@ export default function ConnectAPI() {
           ))
         ) : (
           <p className="text-center w-100">Không tìm thấy sản phẩm nào!</p>
-        )} */}
-      {/* </div> */}
+        )}
+      </div>
     </div>
   );
 }
